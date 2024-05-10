@@ -198,3 +198,55 @@ header::before {
   position: relative; /* Ensures content is above the background image */
   z-index: 1; /* This is to ensure all content is above the pseudo-element */
 }
+
+/* Additions for Card-based Links display on Tools page */
+.tool-cards-container {
+    display: flex; /* Enables Flexbox */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    justify-content: center; /* Centers items horizontally */
+    align-items: flex-start; /* Aligns items at the start of the flex container */
+    margin: 20px 0; /* Vertical spacing for visual separation */
+}
+
+.tool-card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds shadow for 3D effect */
+    margin: 10px;
+    background-color: #fff; /* Card background */
+    text-align: center; /* Center-align text */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures nothing spills out */
+    border: 2px solid #FFD700; /* Adds a gold border */
+    flex-basis: 48%; /* Adjust this value as needed to fit two cards per line */
+    max-width: 48%; /* Ensures that the card does not exceed this width */
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.tool-card:hover {
+    transform: scale(1.03); /* Slightly enlarges the card */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Darker and larger shadow on hover */
+    border-color: #ffd700; /* Changes border color on hover */
+}
+
+.tool-card img {
+    width: 100%; /* Makes image take up 100% of card's width */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 0.8; /* Makes the image slightly transparent */
+    transition: opacity 0.3s; /* Smooth transition for hover effect */
+}
+
+.tool-card:hover img {
+    opacity: 1; /* Image is fully visible on hover */
+}
+
+.tool-card p {
+    padding: 10px; /* Padding inside the card */
+    margin: 0; /* Remove default margin */
+    background-color: #f8f8f8; /* Light background for the text */
+}
+
+@media (max-width: 768px) {
+    .tool-card {
+        flex-basis: 100%; /* Takes full width on smaller screens */
+        max-width: 100%;
+    }
+}
