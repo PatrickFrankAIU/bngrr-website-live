@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black N Gold Railroad Club</title>
+    <link rel="stylesheet" href="../styles.css"> <!-- Ensure this points to your CSS file -->
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="../bngrr_logo.png" alt="Black N Gold Railroad Club Logo">
+            <h1>Black N Gold Railroad</h1>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../tools.html">Upgrade Tools</a></li>
+                <li><a href="../blog.html">Data Blog</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="https://discord.gg/jUnmeaeSad" target="_blank" class="discord-link">Discord Link</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="intro-section">
+            <h2>Summer 2024 Job Distribution</h2>
+            <p>
+                As we have mentioned throughout a couple of our posts, we at BNG use <b>Monte Carlo
+                Simulation (MCS)</b> in order to test out the performance of different dispatch strategies.
+                To run such a simulation, we need to know the statistical distribution of the union
+                jobs. We need to know the type of distribution and we need to know its parameters.
+            </p>
+            <p>
+                There is no mystery regarding the first component - it is a <b>discrete statistical distribution</b>. 
+                There is a finite number of possible jobs that may be generated. A discrete distribution is 
+                specified by two pieces of information: a list of possible outcomes, and each outcomes probability of occurring.
+            </p>
+            <p>Given the mechanisms of the game, we know all the types of jobs that could be implemented. A job filter is 
+                determined by four variables:</p>
+            <ul class="variables-list">
+                <li><b>Region:</b> Current (C) or Previous (R)</li>
+                <li><b>Rarity:</b> Legendary (L), Epic (E), Rare (R), Common (C) or Any (A)</li>
+                <li><b>Fuel:</b> Steam (S), Diesel (D), Electric (E) or Any (A)</li>
+                <li><b>Union-badged:</b> Yes (Y) or No (N)</li>
+            </ul>
+            <p>
+                Multiplying the number of possible values for each variable, we get 80 filters (=
+                2 × 5 × 4 × 2). However, for whatever reasons, the game developers does at the time
+                of writing not allow for union-badged jobs in your prior region (PXXY). That’s 20
+                jobs out of the window. The game developers does not allow for quadruple locked
+                jobs. The least possible restricted job is either a PAAN or CAAN. These are single
+                locked jobs. Only the region is restricted. A double locked job requires a specific, and
+                a specific level of rarity, fuel or union-badged trains (only one of these last three). As
+                such, no current region, union-badged train job with both a specific level of rarity and
+                specific fuel type may occur. That’s 12 jobs that simply does not occur: CLSY, CLDY,
+                CLEY, CESY, CEDY, CEEY, CRSY, CRDY, CREY, CCSY, CCDY, CCEY. The total number
+                of jobs possible has consequently been brought down to 48. However, for as long as we
+                at BNG have been tracking the job data, only 45 filters are ever observed each season.
+                Interestingly, the three missing job filters differ from season to season.
+            </p>
+            <p>
+                Alright, so there are 45 possible values, what is the probability of each? Thanks to
+                our Operation Blackbox (read more about it here), we have a pretty good idea. Being
+                half-way through the season, we have observed over 1 400 jobs! So there you go, the
+                statistical distribution of the union jobs.
+            </p>
+            <p>
+                <img src="summerfilterfrequency.png">
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Black N Gold Railroad Club</p>
+    </footer>
+</body>
+</html>
