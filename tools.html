@@ -3,57 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black N Gold Railroad Club</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Upgrade Tools - Black N Gold Railroad Club</title>
+    <link rel="stylesheet" href="styles-modern.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="bngrr_logo_small.png" alt="Black N Gold Railroad Club Logo">
-            <h1>Black N Gold Railroad</h1>
-<nav>
-    <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tools.html">Upgrade Tools</a></li>
-        <li><a href="https://blogbngrr.wordpress.com/">Data Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://discord.gg/jUnmeaeSad" target="_blank" class="discord-link">Discord Link</a></li>
-    </ul>
-</nav>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="rail-track"></div>
+        <div class="rail-track"></div>
+        <div class="rail-track"></div>
+    </div>
 
+    <!-- Header -->
+    <header id="main-header">
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="bngrr_logo_small.png" alt="Black N Gold Railroad Club Logo" class="logo">
+                <h1>Black N Gold Railroad</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="tools.html" class="nav-link active">Upgrade Tools</a></li>
+                    <li><a href="blog.html" class="nav-link">Data Blog</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="https://discord.gg/jUnmeaeSad" target="_blank" class="discord-btn">Join Discord</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
-    <main>
-        <div class="intro-section">
-            <div class="tool-cards-container">
-                <div class="tool-card">
-                    <a href="http://www.bngrr.free.nf/region-planning" target="_blank" rel="noopener noreferrer">
-                        <p>Trainwalker's Region Crossover Planning Tool</p>
-                        <img src="regiontool.png" alt="Screenshot of Region Crossover Planning Tool">
-                    </a>
-                </div>
-                <div class="tool-card">
-                    <a href="http://www.bngrr.free.nf" target="_blank" rel="noopener noreferrer">
-                        <p>Trainwalker's Upgrade Tool</p>
-                        <img src="upgrades.png" alt="Screenshot of Upgrade Tool">
-                    </a>
-                </div>
-                <div class="tool-card">
-                    <a href="http://tools.bngrr.com" target="_blank" rel="noopener noreferrer">
-                        <p>Jim Mahlzahn's Upgrade Tool</p>
-                        <img src="jimupgrades.png" alt="Screenshot of Jim Mahlzahn's Upgrade Tool">
-                    </a>
+
+    <!-- Tools Hero Section -->
+    <section class="tools-hero">
+        <div class="container">
+            <div class="tools-hero-content">
+                <h2 class="page-title">Power-Up Your Gameplay</h2>
+                <p class="page-subtitle">Advanced calculators and planners designed by BNG's data experts</p>
+                <div class="tools-stats">
+                    <div class="tool-stat">
+                        <span class="stat-icon">📊</span>
+                        <span class="stat-text">Data-Driven</span>
+                    </div>
+                    <div class="tool-stat">
+                        <span class="stat-icon">🚀</span>
+                        <span class="stat-text">Performance Optimized</span>
+                    </div>
+                    <div class="tool-stat">
+                        <span class="stat-icon">💡</span>
+                        <span class="stat-text">Strategy Focused</span>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        
-        <p>If you have any questions, or would like to sign up, <a href="https://discord.gg/jUnmeaeSad" target="_blank">join our Discord server</a>, fill out an application and someone will contact you as soon as possible.</p>        
+    </section>
 
+    <!-- Tools Grid Section -->
+    <section class="tools-section">
+        <div class="container">
+            <div class="tools-grid">
+                <!-- Region Planning Tool -->
+                <div class="tool-card featured">
+                    <div class="tool-badge">Most Popular</div>
+                    <div class="tool-image">
+                        <img src="regiontool.png" alt="Region Crossover Planning Tool">
+                        <div class="tool-overlay">
+                            <a href="http://www.bngrr.free.nf/region-planning" target="_blank" rel="noopener noreferrer" class="tool-btn">Launch Tool</a>
+                        </div>
+                    </div>
+                    <div class="tool-content">
+                        <h3>Region Crossover Planning Tool</h3>
+                        <p class="tool-author">by Trainwalker</p>
+                        <p class="tool-description">Master your region progression with this comprehensive planning tool. Calculate optimal paths and maximize efficiency.</p>
+                        <div class="tool-features">
+                            <span class="feature-tag">Region Planning</span>
+                            <span class="feature-tag">Path Optimization</span>
+                            <span class="feature-tag">Cost Calculator</span>
+                        </div>
+                    </div>
+                </div>
 
-    </main>
+                <!-- Upgrade Tool -->
+                <div class="tool-card">
+                    <div class="tool-image">
+                        <img src="upgrades.png" alt="Trainwalker's Upgrade Tool">
+                        <div class="tool-overlay">
+                            <a href="http://www.bngrr.free.nf" target="_blank" rel="noopener noreferrer" class="tool-btn">Launch Tool</a>
+                        </div>
+                    </div>
+                    <div class="tool-content">
+                        <h3>Advanced Upgrade Calculator</h3>
+                        <p class="tool-author">by Trainwalker</p>
+                        <p class="tool-description">Calculate upgrade costs, compare train efficiency, and plan your resource allocation for maximum growth.</p>
+                        <div class="tool-features">
+                            <span class="feature-tag">Upgrade Costs</span>
+                            <span class="feature-tag">Train Comparison</span>
+                            <span class="feature-tag">ROI Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jim's Tool -->
+                <div class="tool-card">
+                    <div class="tool-image">
+                        <img src="jimupgrades.png" alt="Jim Mahlzahn's Upgrade Tool">
+                        <div class="tool-overlay">
+                            <a href="http://tools.bngrr.com" target="_blank" rel="noopener noreferrer" class="tool-btn">Launch Tool</a>
+                        </div>
+                    </div>
+                    <div class="tool-content">
+                        <h3>Strategic Upgrade Planner</h3>
+                        <p class="tool-author">by Jim Mahlzahn</p>
+                        <p class="tool-description">Alternative upgrade calculator with unique features and strategic insights for competitive gameplay.</p>
+                        <div class="tool-features">
+                            <span class="feature-tag">Strategic Planning</span>
+                            <span class="feature-tag">Cost Analysis</span>
+                            <span class="feature-tag">Competition Ready</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Resources -->
+            <div class="resources-section">
+                <h3>Additional Resources</h3>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">📚</div>
+                        <h4>Strategy Guides</h4>
+                        <p>In-depth guides and tutorials available on our blog</p>
+                        <a href="blog.html" class="resource-link">Visit Blog →</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">💬</div>
+                        <h4>Community Support</h4>
+                        <p>Get help and share strategies with fellow players</p>
+                        <a href="https://discord.gg/jUnmeaeSad" target="_blank" class="resource-link">Join Discord →</a>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">📈</div>
+                        <h4>Data Analysis</h4>
+                        <p>Monte Carlo simulations and performance analytics</p>
+                        <a href="blog.html" class="resource-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="tools-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Optimize Your Game?</h2>
+                <p>Join our community and get access to exclusive strategies and updates</p>
+                <a href="https://discord.gg/jUnmeaeSad" target="_blank" class="cta-button primary">Join Our Discord</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Black N Gold Railroad Club</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Black N Gold Railroad</h3>
+                <p>Elite gaming union for Trainstation 2</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Strategy Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <a href="https://discord.gg/jUnmeaeSad" target="_blank" class="discord-link">Discord Community</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Black N Gold Railroad Club. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="script-modern.js"></script>
 </body>
 </html>

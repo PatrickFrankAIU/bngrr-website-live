@@ -3,57 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black N Gold Railroad Club</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Black N Gold Railroad Club - Elite Gaming Union</title>
+    <link rel="stylesheet" href="styles-modern.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="rail-track"></div>
+        <div class="rail-track"></div>
+        <div class="rail-track"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="main-header">
         <div class="header-content">
-			<img src="bngrr_logo_small.png" alt="Black N Gold Railroad Club Logo">
-			<h1>Black N Gold Railroad</h1>
-			<nav>
-				<ul class="menu">
-					<li><a href="index.html">Home</a></li>
-                    <li><a href="tools.html">Upgrade Tools</a></li>
-					<li><a href="https://blogbngrr.wordpress.com/">Data Blog</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="https://discord.gg/jUnmeaeSad" target="_blank" class="discord-link">Discord Link</a></li>
-				</ul>
-			</nav>
-		</div>
-    </header>
-    <main>
-        <div class="intro-section">
-            <h2>Welcome to Black N Gold Railroad</h2>
-            <p>Black N Gold Railroad is a Union of players who play the Trainstation 2 mobile game from Pixel Federation.</p>
-            <button id="expand-btn">Read More</button>
-            <div class="additional-content">
-                <p>In the Fall season, we adopted a system of promotion and relegation across three rosters (BNGRR Unions) based on performance. The goal was to have <strong>two</strong> rosters reach the Top 25 (earning a 100-slot train). This goal was achieved!</p>
-                <div class="best-finishes">
-                    <strong>BEST FINISHES:</strong>
-                    <ul>
-                        <li><strong>Winter 2022:</strong> 12th place</li>
-                        <li><strong>Spring 2023:</strong> 10th place</li>
-                        <li><strong>Summer 2023:</strong> 4th place (BNGRR1), 38th place (BNGRR2)</li>
-                        <li><strong>Fall 2023:</strong> 9th place (BNGRR1), 20th place (BNGRR2) <em>Two full rosters earned 100-slot trains!</em></li>
-                        <li><strong>Winter 23-24:</strong> Two Unions finished in the Top 15. <em>Two full rosters earned 100-slot trains!</em></li>
-                    </ul>
-                </div>
-                <p>For Spring 2024 we will continue our approach from Winter, again attempting to keep two unions in the Top 25.</p>
-                <p>If you have any questions, or would like to sign up, <a href="https://discord.gg/jUnmeaeSad" target="_blank">join our Discord server</a>, fill out an application and someone will contact you as soon as possible.</p>
+            <div class="logo-section">
+                <img src="bngrr_logo_small.png" alt="Black N Gold Railroad Club Logo" class="logo">
+                <h1>Black N Gold Railroad</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="tools.html" class="nav-link">Upgrade Tools</a></li>
+                    <li><a href="blog.html" class="nav-link">Data Blog</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="https://discord.gg/jUnmeaeSad" target="_blank" class="discord-btn">Join Discord</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-		<div class="image-section-container">
-			<h2>Why Join?</h2>
-			<button class="expand-btn-image">Read Less</button>
-			<div class="image-content">
-				<img src="quotes.png" alt="Quotes" style="max-width:100%; height:auto;">
-			</div>
-		</div>
-    </main>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Elite Railroad Gaming</h2>
+            <p class="hero-subtitle">Dominating Trainstation 2 with Data-Driven Strategy</p>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-number">4th</div>
+                    <div class="stat-label">Best Overall Finish</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Seasons with 2× Top 25</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">6th</div>
+                    <div class="stat-label">Spring 2025 Steam Union</div>
+                </div>
+            </div>
+            <a href="#about" class="cta-button">Discover Our Strategy</a>
+        </div>
+        <div class="hero-train">
+            <div class="train-animation"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Welcome to Excellence</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">Black N Gold Railroad is not just a union—it's a competitive powerhouse in Trainstation 2.</p>
+                    <p>We've revolutionized gameplay through advanced analytics, Monte Carlo simulations, and a proven promotion/relegation system that keeps our players at peak performance.</p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <span class="feature-icon">🏆</span>
+                            <span>Multiple Top 25 Finishes</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📊</span>
+                            <span>Data-Driven Strategies</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🚂</span>
+                            <span>100-Slot Train Rewards</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🌟</span>
+                            <span>3-Tier Union System</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="achievement-showcase">
+                        <h3>Season Performance History</h3>
+                        <div class="achievement-grid">
+                            <div class="achievement highlight current">
+                                <div class="achievement-season">Spring 2025</div>
+                                <div class="achievement-place">6th & Top 25</div>
+                                <div class="achievement-note">Steam Union: 6th Place! 🔥</div>
+                            </div>
+                            <div class="achievement">
+                                <div class="achievement-season">Winter 2025</div>
+                                <div class="achievement-place">Top 25 × 2</div>
+                                <div class="achievement-badge">🚂 2× 100-slot trains!</div>
+                            </div>
+                            <div class="achievement">
+                                <div class="achievement-season">Fall 2024</div>
+                                <div class="achievement-place">Top 25 × 2</div>
+                                <div class="achievement-badge">🚂 2× 100-slot trains!</div>
+                            </div>
+                            <div class="achievement">
+                                <div class="achievement-season">Summer 2024</div>
+                                <div class="achievement-place">Top 15 × 2</div>
+                                <div class="achievement-badge">🚂 2× 100-slot trains!</div>
+                            </div>
+                            <div class="achievement">
+                                <div class="achievement-season">Spring 2024</div>
+                                <div class="achievement-place">Top 15 × 2</div>
+                                <div class="achievement-badge">🚂 2× 100-slot trains!</div>
+                            </div>
+                            <div class="achievement">
+                                <div class="achievement-season">Winter 2024</div>
+                                <div class="achievement-place">Top 15 × 2</div>
+                                <div class="achievement-badge">🚂 2× 100-slot trains!</div>
+                            </div>
+                            <div class="achievement">
+                                <div class="achievement-season">Fall 2023</div>
+                                <div class="achievement-place">9th & 20th</div>
+                                <div class="achievement-badge">🚂 2× 100-slot trains!</div>
+                            </div>
+                            <div class="achievement highlight">
+                                <div class="achievement-season">Summer 2023</div>
+                                <div class="achievement-place">4th Place</div>
+                                <div class="achievement-note">BNGRR1: 4th | BNGRR2: 38th</div>
+                            </div>
+                            <div class="achievement">
+                                <div class="achievement-season">Spring 2023</div>
+                                <div class="achievement-place">10th Place</div>
+                            </div>
+                            <div class="achievement">
+                                <div class="achievement-season">Winter 2022</div>
+                                <div class="achievement-place">12th Place</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Join Section -->
+    <section class="why-join">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Join BNG?</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Strategic Excellence</h3>
+                    <p>Learn from the best with our proven dispatching strategies and optimization techniques.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📈</div>
+                    <h3>Advanced Analytics</h3>
+                    <p>Access exclusive tools and Monte Carlo simulations to maximize your performance.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h3>Active Community</h3>
+                    <p>Join a thriving Discord server with dedicated players sharing tips and strategies.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏅</div>
+                    <h3>Competitive Edge</h3>
+                    <p>Compete at the highest levels with our promotion/relegation system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonial-slider">
+                <div class="testimonial-card active">
+                    <img src="quotes.png" alt="Member Testimonials" class="testimonial-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Join the Elite?</h2>
+                <p>Take your Trainstation 2 gameplay to the next level</p>
+                <div class="cta-buttons">
+                    <a href="https://discord.gg/jUnmeaeSad" target="_blank" class="cta-button primary">Join Our Discord</a>
+                    <a href="tools.html" class="cta-button secondary">Explore Our Tools</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Black N Gold Railroad Club</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Black N Gold Railroad</h3>
+                <p>Elite gaming union for Trainstation 2</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="tools.html">Upgrade Tools</a></li>
+                    <li><a href="blog.html">Strategy Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <a href="https://discord.gg/jUnmeaeSad" target="_blank" class="discord-link">Discord Community</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Black N Gold Railroad Club. All rights reserved.</p>
+        </div>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="script-modern.js"></script>
 </body>
 </html>
