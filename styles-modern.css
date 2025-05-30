@@ -187,6 +187,7 @@ nav ul {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    margin-left: 2rem; /* Added spacing before Discord button */
 }
 
 .discord-btn::before {
